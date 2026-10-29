@@ -209,4 +209,220 @@ Day - 10 | 27th Oct. 2026
 		As a best practise, it is always recommended to use git pull to keep the Local Repo in sync with Remote Repo.
 		
 		
+
+#########################
+Day - 11 | 29th Oct. 2026
+#########################
+		
+	- GIT Installation and Configurations :::
+		
+	- Install Git on Local Machine : 
 	
+	- Working with GIT Cli Commands :::
+	
+	
+		git --version 
+		
+	- https://git-scm.com/install/mac
+	
+	- https://git-scm.com/install/windows
+	
+	Install and Configure Git Client on Local Machine.		# https://git-scm.com/install/
+	
+		- Windows users: Git for Windows/x64 Setup.
+			- git bash		# default linux user command
+			- git cmd
+			- git gui
+		- Mac users :
+			- Open Mac Terminal 
+			
+			
+		- git --version	
+	
+	
+	- Maintain the Project Source Code Versioning :::
+	
+	
+	- GIT File Workflow ::::
+	
+	
+	Local Machine 																
+	
+	- Install Git Client 														
+	
+	Working Directory		   Staging/Index Area			Local Repository		Remote Repository
+	
+	index.html 		 --------> index.html 	  	----------> index.html_V1	--------> index.html_V1
+					  git add 					git commit					git push
+
+
+	Working Directory 		Is the Project Workspace(Folder) --> *.java / *.html / *.razor
+	
+	
+	Create Default Directory to work on Git client :::
+	
+	
+	cd d: 
+	
+	cd c: 
+	
+	mkdir PL_DevOps_2910
+	
+	cd PL_DevOps_2910
+	
+	mkdir repo1
+	
+	
+	mkdir repo2
+	mkdir repo3
+	mkdir repo4
+	
+	
+	cd repo1 
+	
+		- execute git cli command 
+		
+	- New Projects		
+	
+	Create Local Repository :::
+	
+		git init 				# Used to Initialize Local git repository 
+								# Create .GIT! Directory 
+								# Create the default master/main branch 
+								
+		git status				# To get the status of the Git Repository
+		
+	
+		
+	
+	Local Machine :::																
+	
+	- Install Git Client 														
+	
+	Working Directory		   Staging/Index Area				Local Repository		
+	
+	file1.txt 		 --------> file1.txt  	  		----------> file1.txt 	  
+					  git add 					 	git commit					
+
+	
+	
+	
+	git add 
+	
+	
+	cd d: 
+	
+	mkdir PL_DevOps_2910
+	
+	cd PL_DevOps_2910
+	
+	mkdir repo1
+	
+	git init 
+	
+	git status 
+	
+	echo "rec1" >> file1.txt 
+	
+	git status 	
+	
+	git add file1.txt 
+	
+	git status 	
+	
+	git commit -m "Created file1.txt"
+	
+	git log 
+	
+	ls					# Linux Command ==> To get the list of files/Dir from the Working Directory
+	
+	git ls-files 		# git cli Command ==> To get the list of files that are being tracked by git.
+	
+	HEAD 				# Is is a git pointer - always points to the latest commit of current branch
+	
+	
+	
+
+
+	- Git Config :::
+	
+	
+		- git global configuration:   	# Used to set the user_name / User_email_id
+										# Global Config is applicable to all the repositories
+			
+				
+			git config --global user.name "Loksai"
+			
+			git config --global user.email "Loksai@asdf.com"
+		
+		- git local configuration:   	# Used to set the user_name / User_email_id
+										# Local Config is applicable to a specific repository
+				
+				
+			git config user.name "Loksai"
+			
+			git config user.email "Loksai@asdf.com"	
+			
+	
+	Flow of Execution::::
+			
+	cd d: 
+	
+	mkdir PL_DevOps_2910
+	
+	cd PL_DevOps_2910
+	
+	mkdir repo1
+	
+	git init 
+	
+	git status 			
+
+	git config --global user.name "Loksai"					# Just for the very first time
+	
+	git config --global user.email "Loksai@asdf.com"		# Just for the very first time
+	
+	echo "rec1" >> file1.txt 
+	
+	git add file1.txt
+	
+	git status 		
+
+	git commit -m "Created file1.txt"
+
+	git status 	
+		
+	git log 
+	
+	
+
+	- GIT Misc. Commands :
+	
+	
+	GIT ADD :::
+
+	- Git Add 			# To Add the changes from Working Directory to Staging Area 
+	
+	
+		- git add <file_name>
+		
+		- git add <file_name1> <file_name2>
+		
+		- git add *.java *.py
+		
+		- git add .									# Add all the untracked files to the Staging Area 
+		
+	- git commit -m "Created some files"
+	
+	
+Next:
+
+	Undo Actions :::
+	
+		- UnStage ::: 
+		
+	GIT LOG 
+	
+	GIT Commit 
+	
+	Git Misc. 	
